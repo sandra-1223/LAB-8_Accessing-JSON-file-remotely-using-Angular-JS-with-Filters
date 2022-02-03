@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="labemp.js"></script>
+    <!-- CSS -->
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url("../frontend/font/Montserrat-Regular.ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Montserrat';
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: #333333;
+            padding: 1%;
+        }
+
+        table {
+            background-color: #e3e3e3;
+            margin: 2% 5%;
+            width: 90%;
+        }
+
+        td,
+        th {
+            text-align: center;
+            padding: 2%;
+        }
+
+        .button {
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body ng-controller="myctrl">
+    <center>
+        <h1>Recruiter Details</h1>
+    <table cellpadding="2" cellspacing="2"border="1" >
+        <tr>
+            <th>ID<br><input type="text" ng-model="search.ID"></th>
+            <th>Name<br><input type="text" ng-model="search.Name"></th>
+            <th>Experience<br><input type="text" ng-model="search.Experience"></th>
+            <th>Department<br><input type="text" ng-model="search.Department"></th>
+            <th>Phone<br><input type="text" ng-model="search.Phone"></th>
+            <th>Salary<br><input type="text" ng-model="search.Salary"></th>
+        </tr>
+        <tr ng-repeat="item in entry|filter:search">
+            <td>{{item.ID}}</td>
+            <td>{{item.Name}}</td>
+            <td>{{item.Experience}}</td>
+            <td>{{item.Department}}</td>
+            <td>{{item.Phone}}</td>
+            <td>{{item.Salary}}</td>
+        </tr>
+    </table>
+</center>
+</body>
+
+</html>
