@@ -6,4 +6,5 @@ sample.controller("myctrl", function($scope, $http)
     {
         $scope.entry=response.data;
     });
+    $scope.rowlimit=10;
 });
