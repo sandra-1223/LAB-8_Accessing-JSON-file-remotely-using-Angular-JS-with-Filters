@@ -53,22 +53,23 @@
 <body ng-controller="myctrl">
     <center>
         <h1>Recruiter Details</h1>
+         &nbsp; Rows to Display:<input type="number" step="1" min="0" max="10" ng-model="rowlimit" />
     <table cellpadding="2" cellspacing="2"border="1" >
         <tr>
-            <th>ID<br><input type="text" ng-model="search.ID"></th>
-            <th>Name<br><input type="text" ng-model="search.Name"></th>
+            <th ng-click="orderByMe('ID')">ID<br><input type="text" ng-model="search.ID"></th>
+            <th ng-click="orderByMe('Name')">Name<br><input type="text" ng-model="search.Name"></th>
             <th>Experience<br><input type="text" ng-model="search.Experience"></th>
             <th>Department<br><input type="text" ng-model="search.Department"></th>
             <th>Phone<br><input type="text" ng-model="search.Phone"></th>
             <th>Salary<br><input type="text" ng-model="search.Salary"></th>
         </tr>
-        <tr ng-repeat="item in entry|filter:search">
+        <tr ng-repeat="item in entry|filter:search|orderBy:myOrderBy| limitTo:rowlimit">
             <td>{{item.ID}}</td>
-            <td>{{item.Name}}</td>
-            <td>{{item.Experience}}</td>
+            <td>{{item.Name|uppercase}}</td>
+            <td>{{item.Experience|lowercase}}</td>
             <td>{{item.Department}}</td>
             <td>{{item.Phone}}</td>
-            <td>{{item.Salary}}</td>
+            <td>{{item.Salary|currency: "Rs. "}}</td>
         </tr>
     </table>
 </center>
