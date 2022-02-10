@@ -1,6 +1,6 @@
 {"records":[ 
     {"ID":1, "Name":"Angel Maria", "Experience":"12 Years", "Department": "General Management", "Phone": 9620608869, "Salary": 18000},
-    {"ID":2, "Name":"Kiran Kumar", "Experience":"7 years",  "Department": "Marketing", "Phone": 9620608877, "Salary": 8000},
+    {"ID":2, "Name":"Kiran Kumar", "Experience":"7 Years",  "Department": "Marketing", "Phone": 9620608877, "Salary": 8000},
     {"ID":3, "Name":"Jerin James", "Experience":"10 Years", "Department": "Finance", "Phone": 9620608866, "Salary": 15000},
     {"ID":4, "Name":"Aarathy V", "Experience":"4 Years",  "Department": "Sales", "Phone": 9620608899, "Salary": 2000},
     {"ID":5, "Name":"Maria Ann", "Experience":"6 Years",  "Department": "Human Resource", "Phone": 9620608844, "Salary": 7500},
