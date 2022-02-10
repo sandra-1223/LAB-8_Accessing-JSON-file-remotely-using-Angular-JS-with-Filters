@@ -1,0 +1,12 @@
+{"records":[ 
+    {"ID":1, "Name":"Angel Maria", "Experience":"12 Years", "Department": "General Management", "Phone": 9620608869, "Salary": 18000},
+    {"ID":2, "Name":"Kiran Kumar", "Experience":"7 years",  "Department": "Marketing", "Phone": 9620608877, "Salary": 8000},
+    {"ID":3, "Name":"Jerin James", "Experience":"10 Years", "Department": "Finance", "Phone": 9620608866, "Salary": 15000},
+    {"ID":4, "Name":"Aarathy V", "Experience":"4 Years",  "Department": "Sales", "Phone": 9620608899, "Salary": 2000},
+    {"ID":5, "Name":"Maria Ann", "Experience":"6 Years",  "Department": "Human Resource", "Phone": 9620608844, "Salary": 7500},
+    {"ID":6, "Name":"Sidharth Singh", "Experience":"8 Years",  "Department": "Purchase", "Phone": 9620608860, "Salary": 9000},
+    {"ID":7, "Name":"Johnny Baby", "Experience":"8 Years",  "Department": "Marketing", "Phone": 9120608869, "Salary": 8700},  
+    {"ID":8, "Name":"Maria David", "Experience":"6 Years",  "Department": "Human Resource", "Phone": 9620008869, "Salary": 7500},
+    {"ID":9, "Name":"Jiya Susan", "Experience":"8 Years",  "Department": "Purchase", "Phone": 9666608869, "Salary": 9000},
+    {"ID":10, "Name":"Naidu Pathak", "Experience":"8 Years",  "Department": "Marketing", "Phone": 9640608869, "Salary": 9000}  
+]}
